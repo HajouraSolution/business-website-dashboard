@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<header class="admin-header">
+    <h2>Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<div class="dashboard-container">
+    <h3>Edit Home Page Hero Text </h3>
+
+    <textarea id="homeContent" rows="6"></textarea>
+    <button onclick="saveContent()">Save Changes</button>
+
+    <p class="success" id="successMsg"></p>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
