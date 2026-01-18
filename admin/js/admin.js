@@ -6,8 +6,8 @@ document.getElementById("loginForm")?.addEventListener("submit", function (e) {
     const pass = document.getElementById("password").value;
     const error = document.getElementById("loginError");
 
-    /*    if (user === "admin" && pass === "1234") {
-        localStorage.setItem("isLoggedIn", "true"); */
+    /*    if (user === "admin" && pass === "1234") { */
+        localStorage.setItem("isLoggedIn", "true"); 
         window.location.href = "dashboard.html";
     /*    } else {
         error.textContent = "Invalid credentials.";
@@ -38,6 +38,6 @@ window.onload = function () {
 
 // LOGOUT
 function logout() {
-  /*  localStorage.removeItem("isLoggedIn"); */
+    localStorage.removeItem("isLoggedIn"); 
     window.location.href = "login.html";
 }
